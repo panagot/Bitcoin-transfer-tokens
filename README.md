@@ -6,4 +6,4 @@
 
 
 
-Δημιουργήθηκε με το npm model [Bitcoin|Computer](https://bitcoin-computer.gitbook.io/docs/).
+Δημιουργήθηκε με το npm model [Bitcoin|Computer](https://bitcoin-computer.gitbook.io/docs/) που προσωρινά χρησιμοποεί μόνο BCH.
