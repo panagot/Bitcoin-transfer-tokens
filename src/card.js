@@ -3,7 +3,7 @@ import React from 'react';
 
 export default ({ artwork }) => {
   const handleClick = () => {
-    const publicKey = prompt("Please enter the public key of the new owner")
+    const publicKey = prompt("Παρακαλώ εισάγετε το Δημόσιο Κλειδί του παραλήπτη")
     artwork.setOwner(publicKey)
   }
 
