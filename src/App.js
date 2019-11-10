@@ -46,7 +46,7 @@ function App() {
       <h2>(Δημιουργήθηκε με το NPM Bitcoin-computer που προσωρινά υποστηρίζει μόνο BCH.</h2>
       <h2>Σύντομα θα είναι διαθέσιμο για BTC και όλα τα κρυπτονομίσματα που βασίζονται στο Bitcoin)</h2>
       <h2>Οδηγίες: <a href="https://bitcoin-computer.gitbook.io/docs/">bitcoin-computer.gitbook.io/docs</a> </h2>
-      <h2>Πορτοφόλι</h2>
+      <h2>Πορτοφόλι BCH</h2>
       <b>Διεύθυνση:</b>&nbsp;{computer.db.wallet.getAddress().toString()}<br />
       <b>Δημόσιο κλειδί: </b>&nbsp;{computer.db.wallet.getPublicKey().toString()}<br />
       <b>Υπόλοιπο: </b>&nbsp;{balance}<br />
