@@ -43,27 +43,30 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Wallet</h2>
-      <b>Address</b>&nbsp;{computer.db.wallet.getAddress().toString()}<br />
-      <b>Public Key</b>&nbsp;{computer.db.wallet.getPublicKey().toString()}<br />
-      <b>Balance</b>&nbsp;{balance}<br />
-      <button type="submit" onClick={() => setComputer(new Computer())}>Generate New Wallet</button>
+      <h2>(Δημιουργήθηκε με το NPM Bitcoin-computer που προσωρινά υποστηρίζει μόνο BCH.</h2>
+      <h2>Σύντομα θα είναι διαθέσιμο για BTC και όλα τα κρυπτονομίσματα που βασίζονται στο Bitcoin)</h2>
+      <h2>Οδηγίες: <a href="https://bitcoin-computer.gitbook.io/docs/">bitcoin-computer.gitbook.io/docs</a> </h2>
+      <h2>Πορτοφόλι</h2>
+      <b>Διεύθυνση:</b>&nbsp;{computer.db.wallet.getAddress().toString()}<br />
+      <b>Δημόσιο κλειδί: </b>&nbsp;{computer.db.wallet.getPublicKey().toString()}<br />
+      <b>Υπόλοιπο: </b>&nbsp;{balance}<br />
+      <button type="submit" onClick={() => setComputer(new Computer())}>Δημιουργία νέου λογαριασμού</button>
 
-      <h2>Create new Artwork</h2>
+      <h2>Δημιουργία νέας εικόνας</h2>
       <form onSubmit={handleSubmit}>
-        Title<br />
+        Τίτλος<br />
         <input type="string" value={title} onChange={e => setTitle(e.target.value)} />
 
-        Artist<br />
+        Όνομα καλλιτέχνη<br />
         <input type="string" value={artist} onChange={e => setArtist(e.target.value)} />
 
-        Url<br />
+        Σύνδεσμος φωτογραφίας<br />
         <input type="string" value={url} onChange={e => setUrl(e.target.value)} />
 
-        <button type="submit" value="Send Bitcoin">Create Artwork</button>
+        <button type="submit" value="Send Bitcoin">Δημιουργία εικόνας</button>
       </form>
 
-      <h2>Your Artworks</h2>
+      <h2>Οι φωτογραφίες σας</h2>
       <ul className="flex-container">
         {artworks.map(artwork => <Card artwork={artwork} key={artwork.title + artwork.artist} />)}
       </ul>
